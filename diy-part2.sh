@@ -9,7 +9,7 @@
 # File name: diy-part2.sh
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #=================================================
-#1. Modify default IP
+
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generate
 #=================================================
@@ -32,4 +32,4 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lea
 #增加插件包
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
-© 2021 GitHub, Inc.
+
